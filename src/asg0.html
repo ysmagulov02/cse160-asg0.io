@@ -1,0 +1,47 @@
+<!-- Yernar Smagulov -->
+<!-- ysmagulo@ucsc.edu -->
+
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Vector Drawing Interface</title>
+</head>
+<body onload="main()">
+<canvas id="example" width="400" height="400">Please use a browser that supports "canvas"</canvas>
+<div>
+    <label for="xInput1">v1: x</label>
+    <input id="xInput1" type="number" step="any">
+    <label for="yInput1">y</label>
+    <input id="yInput1" type="number" step="any">
+</div>
+<div>
+    <label for="xInput2">v2: x</label>
+    <input id="xInput2" type="number" step="any">
+    <label for="yInput2">y</label>
+    <input id="yInput2" type="number" step="any">
+</div>
+<div>
+    <button onclick="handleDrawEvent()">Draw</button>
+</div>
+<br>
+<div>
+    <label for="operationSelector">Operation:</label>
+    <select id="operationSelector">
+        <option value="add">Add</option>
+        <option value="sub">Subtract</option>
+        <option value="mul">Multiply</option>
+        <option value="div">Divide</option>
+        <option value="mag">Magnitude</option>
+        <option value="norm">Normalize</option>
+        <option value="angle">Angle Between</option>
+        <option value="area">Area</option>
+    </select>
+    <label for="scalarInput">Scalar:</label>
+    <input id="scalarInput" type="number" step="any">
+</div>
+<div>
+    <button onclick="handleDrawOperationEvent()">Draw</button>
+</div>
+<script src="lib/cuon-matrix-cse160.js"></script>
+<script src="asg0.js"></script>
+</body> </html>
